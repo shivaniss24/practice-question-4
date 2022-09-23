@@ -18,6 +18,7 @@ function isBlue()
     var blueText=document.getElementById('input-text').style.color='blue';
 }
 
+
 redButton.addEventListener('click',isRed);
 greenButton.addEventListener('click',isGreen);
 blueButton.addEventListener('click',isBlue);
