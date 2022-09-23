@@ -7,16 +7,22 @@ var outputElement=document.querySelector('#output');
 
 function isRed()
 {
-    var redText=document.getElementById('input-text').style.color='red';
+    var redText=outputElement.style.color='red';
 }
 function isGreen()
 {
-    var greenText=document.getElementById('input-text').style.color='green';
+    var greenText=outputElement.style.color='green';
 }
 function isBlue()
 {
-    var blueText=document.getElementById('input-text').style.color='blue';
+    var blueText=outputElement.style.color='blue';
 }
+function showOp()
+{
+    var output=document.getElementById('input-text').style
+    outputElement.innerText=inputElement.value;
+}
+inputElement.addEventListener('input',showOp);
 
 
 redButton.addEventListener('click',isRed);
